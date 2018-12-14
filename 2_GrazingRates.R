@@ -108,5 +108,9 @@ gg.ltgraz<-ggplot(se.ltgraz,aes(x=ExposureDays,y=CumAdjGraz_mean,group=TreatCode
   scale_color_manual(values=c("black","gray50","gray25","gray75"),labels=c("Ambient", "6-Hour Variable Exposure", "3-Hour Variable Exposure","Constant Exposure"),name="Dissolved Oxygen Treatment")+  
   xlab("Experiment days")+
   ylab("Cumulative grazing (g)")+
+  annotate("text", x = 66.5, y = 94.18, label = "A", size = 4)+
+  annotate("text", x = 67.12, y = 83, label = "AB", size = 4)+
+  annotate("text", x = 66.5, y = 77, label = "B", size = 4)+
+  annotate("text", x = 66.5, y = 68, label = "B", size = 4)+
   theme_bw()+theme(panel.border = element_blank(), panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.line.x = element_line(colour = "black", size = .7), axis.line.y = element_line(colour = "black", size = .7), axis.title.x = element_text(size=13), axis.title.y = element_text(size=13),axis.text.x = element_text(size=12),axis.text.y = element_text(size=12))  
 
